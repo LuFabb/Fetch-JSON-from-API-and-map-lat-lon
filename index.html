@@ -33,7 +33,14 @@
   <script>
 
     const mymap = L.map('issMap').setView([0, 0], 1);
-    const marker = L.marker([0, 0]).addTo(mymap);
+
+    const issIcon = L.icon({
+    iconUrl: 'iss200.png',
+    iconSize: [50, 32],
+    iconAnchor: [25, 16]
+   });
+
+    const marker = L.marker([0, 0], {icon: issIcon}).addTo(mymap);
 
     const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
 
