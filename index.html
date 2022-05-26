@@ -62,6 +62,7 @@
       const {latitude, longitude} = data;
 
     //L.marker([latitude, longitude]).addTo(mymap);
+
       marker.setLatLng([latitude, longitude])
 
       document.getElementById('lat').textContent = latitude;
@@ -69,6 +70,7 @@
 
       console.log(latitude);
       console.log(longitude);
+      
     }
 
     getISS()
